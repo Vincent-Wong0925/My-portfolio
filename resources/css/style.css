@@ -1,5 +1,7 @@
 html {
     margin: 0;
+    background-color: black;
+    color: white;
 }
 
 body {
@@ -8,7 +10,23 @@ body {
 
 header {
     display: flex;
+    align-items: center;
     justify-content: space-between;
+    background-color:darkslategray;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 0 2rem;
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 1rem;
+}
+
+a {
+    color: white;
 }
 
 nav ul {
@@ -17,7 +35,7 @@ nav ul {
 
 nav li {
     list-style: none;
-    margin: 1rem 2rem;
+    margin: 0 2rem;
 }
 
 nav a {
@@ -26,8 +44,20 @@ nav a {
     font-size: 1.2rem;
 }
 
+main {
+    margin-top: 5rem;
+}
+
+h2 {
+    color:aqua;
+}
+
 p {
     font-size: 1.2rem;
+}
+
+#about-me p {
+    margin: auto 2rem;
 }
 
 .project-container {
@@ -35,7 +65,8 @@ p {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 2rem;
-    background-color: aquamarine;
+    background-color:darkcyan;
+    column-gap: 2rem;
 }
 
 .project-description {
