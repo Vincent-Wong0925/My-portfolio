@@ -73,8 +73,9 @@ p {
     font-size: 150%;
 }
 
-img {
+#projects img {
     width: 100%;
+    cursor: pointer;
 }
 
 #skills ul {
