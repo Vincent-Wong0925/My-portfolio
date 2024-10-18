@@ -1,0 +1,31 @@
+html {
+    margin: 0;
+}
+
+body {
+    margin: auto 2rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    list-style: none;
+    margin: 1rem 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+img {
+    width: 100%;
+}
