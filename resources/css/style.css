@@ -26,6 +26,22 @@ nav a {
     font-size: 1.2rem;
 }
 
+p {
+    font-size: 1.2rem;
+}
+
+.project-container {
+    margin: 1rem 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+    background-color: aquamarine;
+}
+
+.project-description {
+    font-size: 150%;
+}
+
 img {
     width: 100%;
 }
