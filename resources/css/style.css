@@ -69,7 +69,7 @@ p {
     margin: 1rem 3rem;
     display: grid;
     grid-auto-columns: 1fr 1fr;
-    grid-auto-rows: 1fr;
+    grid-auto-rows: auto;
     grid-auto-flow: column;
     padding: 2rem;
     background-color:darkcyan;
@@ -122,5 +122,17 @@ p {
     }
     .project-container {
         grid-auto-flow: row;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    header {
+        flex-direction: column;
+    }
+    .project-container {
+        margin: 1rem 0;
+    }
+    #contact ul {
+        padding: 0;
     }
 }
