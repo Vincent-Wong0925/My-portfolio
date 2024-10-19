@@ -31,6 +31,7 @@ a {
 
 nav ul {
     display: flex;
+    padding-left: 0;
 }
 
 nav li {
@@ -67,10 +68,13 @@ p {
 .project-container {
     margin: 1rem 3rem;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr 1fr;
+    grid-auto-rows: 1fr;
+    grid-auto-flow: column;
     padding: 2rem;
     background-color:darkcyan;
     column-gap: 2rem;
+    align-items: center;
 }
 
 .project-description {
@@ -100,4 +104,23 @@ p {
     list-style: none;
     margin: 1rem 2rem;
     font-size: 3rem;
+}
+
+@media only screen and (max-width: 860px) {
+    h1 {
+        font-size: 1.2rem;
+        margin: .5rem;
+    }
+    nav ul {
+        margin: .5rem auto;
+    }
+    nav li {
+        margin: auto .5rem;
+    }
+    nav a {
+        font-size: 1rem;
+    }
+    .project-container {
+        grid-auto-flow: row;
+    }
 }
